@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxee Innovation Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <body>
+        <header>
+            <div class="logo">
+              <img src="/img/Logo.png" alt="Luxee Logo" class="nav-logo">
+              <h1>Luxee Innovation Academy</h1>
+            </div>
+            <nav>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                  <a href="#courses" class="dropbtn">Courses</a>
+                  <div class="dropdown-content">
+                    <a href="#html">WebDevelopment Basics</a>
+                    <a href="#design">Graphic Design</a>
+                    <a href="#radiology">Phlebotomy Basics</a>
+                    <a href="#yoga">Yoga Theraphy</a>
+                    <a href="#psychology">Psychology</a>
+                  </div>
+                </li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#interns">Intern Profiles</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+        </header>
+        
+      </body>
+      
+
+  <section id="home" class="home-section">
+    <h2>Welcome to Luxee Innovation Academy</h2>
+    <p>Your pathway to professional learning with internships and expert guidance.</p>
+    <h3>Our Alumni: 50+</h3>
+    <p>We ensure quality education and training with expert mentoring.</p>
+  </section>
+
+  <section id="courses" class="courses-section">
+    <h2>Our Courses</h2>
+    <div class="courses-scroll">
+      <div class="courses">
+        <div class="course">
+          <i class="fas fa-code"></i>
+          <h3>HTML Basics</h3>
+          <p>Duration: 2 Weeks</p>
+          <button onclick="downloadCertificate('HTML Basics')">Enroll Certifications >></button>
+        </div>
+        <div class="course">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS Basics</h3>
+          <p>Duration: 2 Weeks</p>
+          <button onclick="downloadCertificate('CSS Basics')">Enroll Certifications >></button>
+        </div>
+        <div class="course">
+          <i class="fab fa-js-square"></i>
+          <h3>JavaScript Basics</h3>
+          <p>Duration: 1 Month</p>
+          <button onclick="downloadCertificate('JavaScript Basics')">Enroll Certifications >></button>
+        </div>
+        <div class="course">
+          <i class="fas fa-paint-brush"></i>
+          <h3>Graphic Design</h3>
+          <p>Duration: 3 Months</p>
+          <button onclick="downloadCertificate('Graphic Design')">Enroll Certifications >></button>
+        </div>
+        <div class="course">
+          <i class="fas fa-lightbulb"></i>
+          <h3>Content Creation</h3>
+          <p>Duration: 3 Months</p>
+          <button onclick="downloadCertificate('Content Creation')">Enroll Certifications >></button>
+        </div>
+        <div class="course">
+          <i class="fas fa-heartbeat"></i>
+          <h3>Phlebotomy</h3>
+          <p>Duration: 1 Month</p>
+          <button onclick="downloadCertificate('Radiology Basics')">Enroll Certifications >></button>
+        </div>
+        <div class="course">
+          <i class="fas fa-spa"></i>
+          <h3>Yoga Theraphy</h3>
+          <p>Duration: 3 Weeks</p>
+          <button onclick="downloadCertificate('Yoga Basics')">Enroll Certifications >></button>
+        </div>
+        <div class="course">
+          <i class="fas fa-brain"></i>
+          <h3>Psychological Basics</h3>
+          <p>Duration: 1 Month</p>
+          <button onclick="downloadCertificate('Psychology Basics')">Enroll Certifications >></button>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+  <section id="interns" class="interns-section">
+    <h2>Meet Our Interns</h2>
+    <div class="interns-scroll">
+      <div class="interns">
+        <div class="intern">
+          <img src="profiles/intern1.jpg" alt="Intern 1">
+          <p>MOHAMMED SAQIB</p>
+          <p>UI Developer</p>
+        </div>
+        <div class="intern">
+          <img src="profiles/intern2.jpg" alt="Intern 2">
+          <p>MOHAMMED ZAID</p>
+          <p>Graphic Designer</p>
+        </div>
+        <div class="intern">
+          <img src="profiles/intern3.jpg" alt="Intern 3">
+          <p>MOHAMMED ISMAIL</p>
+          <p>UI Designer</p>
+        </div>
+        <div class="intern">
+          <img src="profiles/intern4.jpg" alt="Intern 4">
+          <p>SHIEKA</p>
+          <p>Junior Radiologist</p>
+        </div>
+        <div class="intern">
+          <img src="profiles/intern5.jpg" alt="Intern 5">
+          <p>FAHEEM KHAN</p>
+          <p>Front-End Developer</p>
+        </div>
+      </div>
+    </div>
+    <div id="certificate-modal" class="certificate-modal">
+        <span class="close-btn" onclick="closeCertificateModal()">&times;</span>
+        <img src="/img/CERTIFICATE.png" alt="Certificate" id="certificate-image">
+      </div>
+  </section>
+  
+  
+  <section id="contact" class="contact-section">
+      <div class="login-container">
+    
+        <h1>Login</h1>
+        <form>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    <h2>Contact Us</h2>
+    <p>Email: designs.luxeinnovations@gmail.com</p>
+    <p>Phone: +91 95142 29168</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Luxee Innovation Academy. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
